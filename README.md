@@ -4,12 +4,19 @@
 
 BOOST ASIO 개념 설명
 
+
 Blocking :
 - 함수가 끝날때 까지 기다리는 동작
 
 Non-Blocking :
 - 함수가 끝날때 까지 기다리지 않고 handler를 넘겨주고
 - 다른 일을 하다가 함수가 끝났을 때 handler를 실행
+
+
+I/O Service :
+- 모든 이벤트들을 관리
+
+
 
 To do
 

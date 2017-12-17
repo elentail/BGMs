@@ -38,11 +38,9 @@ int main()
 
   // 3초를 기다리는 timer 생성
   steady_timer timer1{ioservice, std::chrono::seconds{3}};
-  steady_timer timer2{ioservice, std::chrono::seconds{3}};
 
   // *** [non-blocking wait 호출] ***
   timer1.async_wait(handler);
-  timer2.async_wait(handler);
 
   ioservice.run();
 }
